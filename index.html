@@ -1,8 +1,113 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>My site</title>
+  <meta charset="UTF-8" />
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-<h1>Mywebsite</h1>
-  </body>
-</html> 
+  <header>
+    <h1>My Website</h1>
+    <p>Welcome to my corner of the internet</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m [Pincess]. This is a short introduction about who I am,
+        what I do, and what I care about.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project 1:</strong> Brief description of something you built or are proud of.</li>
+        <li><strong>Project 2:</strong> Another cool thing you’ve worked on.</li>
+        <li><strong>Project 3:</strong> Anything else you want to showcase.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> My Website
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
